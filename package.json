@@ -1,0 +1,14 @@
+{
+  "name": "@kevink88/csc196v-final-project",
+  "main": "c1a60a34b2704a2f@655.js",
+  "version": "655.0.0",
+  "homepage": "https://observablehq.com/@kevink88/csc196v-final-project",
+  "author": {
+    "name": "Hung Quach",
+    "url": "https://observablehq.com/@kevink88"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
