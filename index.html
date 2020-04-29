@@ -1,14 +1,76 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<title>CSC196V - Final Project</title>
-<link rel="stylesheet" type="text/css" href="./inspector.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <script src="https://vega.github.io/vega/vega.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src='https://d3js.org/d3.v4.min.js'></script>
+    <title>COVID-19</title>
+</head>
 <body>
-<script type="module">
+ 
+        <div class=top_background>
+            <h1> COVID-19</h1>
+            <h1>Sam Lee - Hung Quach - Rigo Garcia Soto</h1>
+        </div>
+        <div class = content>
+            <h1> 1 - Brief Introduction</h1>
+            <p>
+                <ul>
+                    <li>
+                        COVID-19 has been increasing dramatically in the U.S. &nbsp From only few cases in December,&nbsp the virus has spread to every state and caused 
+                        numerous dead cases every day.
+                    </li>
+                    <li>
+                        We want to know how severe COVID-19 is affecting every state.
+                    </li>
+                </ul>
+            </p>
+            <div class=question>
+                <p>
+                    <strong> Question 1: What is the propotional of the death rate with people who are positive of each state? </strong> 
+                </p>
+            </div>
+            <div class = observable>
+                 <!-- This is from observable script -->
+            <div id="observablehq-b4c1e6a3"></div>
+            <script type="module">
+                import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+                import define from "https://api.observablehq.com/@kevink88/csc196v-final-project.js?v=3";
+                const inspect = Inspector.into("#observablehq-b4c1e6a3");
+                (new Runtime).module(define, name => (name === "special_line") && inspect());
+            </script>
+            </div>
+               
 
-import define from "./index.js";
-import {Runtime, Library, Inspector} from "./runtime.js";
+            <div class=question>
+                <p>
+                    <strong> Question 2: How is COVID-19 affectting every state in the U.S from January to April?</strong> 
+                </p>
+            </div>
+                <!-- This is from observable script --> 
+           
+            <div id="observablehq-d4e22851"></div>
+                <script type="module">
+                import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+                import define from "https://api.observablehq.com/@kevink88/csc196v-final-project.js?v=3";
+                const inspect = Inspector.into("#observablehq-d4e22851");
+                (new Runtime).module(define, name => (name === "chart") && inspect());
+            </script>
 
-const runtime = new Runtime();
-const main = runtime.module(define, Inspector.into(document.body));
 
-</script>
+
+            
+        </div>
+    <script type ="text/javascript" src= "javascript/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
