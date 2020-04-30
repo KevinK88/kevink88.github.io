@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
@@ -12,9 +11,11 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src='https://d3js.org/d3.v4.min.js'></script>
     <title>COVID-19</title>
+
+
 </head>
 <body>
- 
+        <!-- This is the background for the top page -->
         <div class=top_background>
             <h1> COVID-19</h1>
             <h1>Sam Lee - Hung Quach - Rigo Garcia Soto</h1>
@@ -32,13 +33,16 @@
                     </li>
                 </ul>
             </p>
+            <!-- CSS style for all the questions -->
             <div class=question>
                 <p>
                     <strong> Question 1: What is the propotional of the death rate with people who are positive of each state? </strong> 
                 </p>
             </div>
+
+        
+            <!-- This is the code embed from Observable for question 1-->
             <div class = observable>
-                 <!-- This is from observable script -->
             <div id="observablehq-b4c1e6a3"></div>
             <script type="module">
                 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
@@ -48,25 +52,55 @@
             </script>
             </div>
                
-
+            <!-- CSS style for all the questions -->
             <div class=question>
                 <p>
-                    <strong> Question 2: How is COVID-19 affectting every state in the U.S from January to April?</strong> 
+                    <strong> Question 2: What is the positive case for each state?</strong> 
                 </p>
             </div>
-                <!-- This is from observable script --> 
-           
-            <div id="observablehq-d4e22851"></div>
+            <!-- This is the code embed from Tableau for question 2-->
+            <div class='tableauPlaceholder' id='viz1588226297116' style='position: relative'><noscript>
+                <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RN&#47;RNGDT7CS4&#47;1_rss.png' style='border: none' /></a>
+                    </noscript>
+                    <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='path' value='shared&#47;RNGDT7CS4' /> 
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RN&#47;RNGDT7CS4&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='filter' value='publish=yes' />
+                    </object>
+            </div>                
+                <script type='text/javascript'>                    
+                    var divElement = document.getElementById('viz1588226297116');                    
+                    var vizElement = divElement.getElementsByTagName('object')[0];                    
+                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                    else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                    else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
+                    var scriptElement = document.createElement('script');                    
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+                </script>
+
+                <!-- CSS style for all the questions -->
+            <div class=question>
+                <p>
+                    <strong> Question 3: How is COVID-19 affectting every state in the U.S from January to April?</strong> 
+                </p>
+            </div>
+                <!-- This is the code embed from Observable for question 3-->
+            <div id="observablehq-5c3a8b69"></div>
                 <script type="module">
-                import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-                import define from "https://api.observablehq.com/@kevink88/csc196v-final-project.js?v=3";
-                const inspect = Inspector.into("#observablehq-d4e22851");
-                (new Runtime).module(define, name => (name === "chart") && inspect());
+                    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+                    import define from "https://api.observablehq.com/@kevink88/csc196v-final-project.js?v=3";
+                    const inspect = Inspector.into("#observablehq-5c3a8b69");
+                    (new Runtime).module(define, name => (name === "chart") && inspect());
             </script>
 
-
-
-            
         </div>
     <script type ="text/javascript" src= "javascript/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
