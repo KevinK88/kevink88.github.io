@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
@@ -11,100 +12,251 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src='https://d3js.org/d3.v4.min.js'></script>
     <title>COVID-19</title>
-
-
+    <link rel="stylesheet" href="./fullpage/fullpage.css" />
 </head>
+
+
 <body>
-        <!-- This is the background for the top page -->
-        <div class=top_background>
-            <h1> COVID-19</h1>
-            <h1>Sam Lee - Hung Quach - Rigo Garcia Soto</h1>
+    <div id="fullpage">
+        <div class="section  ">
+            <div class="top_background " >
+                <h1> COVID-19</h1>
+                <h1>Sam Lee - Hung Quach - Rigo Garcia Soto</h1>
+            </div>
         </div>
-        <div class = content>
-            <h1> 1 - Brief Introduction</h1>
-            <p>
-                <ul>
-                    <li>
-                        COVID-19 has been increasing dramatically in the U.S. &nbsp From only few cases in December,&nbsp the virus has spread to every state and caused 
-                        numerous dead cases every day.
-                    </li>
-                    <li>
-                        We want to know how severe COVID-19 is affecting every state.
-                    </li>
-                </ul>
-            </p>
-            <!-- CSS style for all the questions -->
-            <div class=question>
-                <p>
-                    <strong> Question 1: What is the propotional of the death rate with people who are positive of each state? </strong> 
-                </p>
-            </div>
+        <div class="section image-background ">
 
-        
-            <!-- This is the code embed from Observable for question 1-->
-            <div class = observable>
-            <div id="observablehq-b4c1e6a3"></div>
-            <script type="module">
-                import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-                import define from "https://api.observablehq.com/@kevink88/csc196v-final-project.js?v=3";
-                const inspect = Inspector.into("#observablehq-b4c1e6a3");
-                (new Runtime).module(define, name => (name === "special_line") && inspect());
-            </script>
-            </div>
-               
-            <!-- CSS style for all the questions -->
-            <div class=question>
+        </div>
+        <div class="section ">
+            <div class = "content">
+                <h1> 1 - Brief Introduction</h1>
                 <p>
-                    <strong> Question 2: What is the positive case for each state?</strong> 
+                    <ul>
+                        <li>
+                            COVID-19 has been increasing dramatically in the U.S. From only few cases in December,&nbsp the virus has spread to every state and caused 
+                            numerous dead cases every day.
+                        </li>
+                        <li>
+                            We want to know how severe COVID-19 is affecting every state.
+                        </li>
+                        <li>
+                            What is the positive case of each state?
+                        </li>
+                        <li>
+                            What is the death rate of each state?
+                        </li>
+                        <li>
+                            What is the solution?
+                        </li>
+                    </ul>
                 </p>
             </div>
-            <!-- This is the code embed from Tableau for question 2-->
-            <div class='tableauPlaceholder' id='viz1588226297116' style='position: relative'><noscript>
-                <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RN&#47;RNGDT7CS4&#47;1_rss.png' style='border: none' /></a>
-                    </noscript>
-                    <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                        <param name='embed_code_version' value='3' /> 
-                        <param name='path' value='shared&#47;RNGDT7CS4' /> 
-                        <param name='toolbar' value='yes' />
-                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RN&#47;RNGDT7CS4&#47;1.png' /> 
-                        <param name='animate_transition' value='yes' />
-                        <param name='display_static_image' value='yes' />
-                        <param name='display_spinner' value='yes' />
-                        <param name='display_overlay' value='yes' />
-                        <param name='display_count' value='yes' />
-                        <param name='filter' value='publish=yes' />
-                    </object>
-            </div>                
-                <script type='text/javascript'>                    
-                    var divElement = document.getElementById('viz1588226297116');                    
-                    var vizElement = divElement.getElementsByTagName('object')[0];                    
-                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
-                    else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
-                    else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
-                    var scriptElement = document.createElement('script');                    
-                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-                    vizElement.parentNode.insertBefore(scriptElement, vizElement);               
-                </script>
-
-                <!-- CSS style for all the questions -->
-            <div class=question>
-                <p>
-                    <strong> Question 3: How is COVID-19 affectting every state in the U.S from January to April?</strong> 
-                </p>
-            </div>
-                <!-- This is the code embed from Observable for question 3-->
-            <div id="observablehq-5c3a8b69"></div>
+        </div>
+        <div class="section ">
+            <div class="content">
+                <div class="question">
+                    <p>
+                        <strong> Question 1: What is the propotional of the death rate with people who are positive of each state? </strong> 
+                    </p>
+                </div>
+                <div id="observablehq-b4c1e6a3"></div>
                 <script type="module">
                     import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
                     import define from "https://api.observablehq.com/@kevink88/csc196v-final-project.js?v=3";
-                    const inspect = Inspector.into("#observablehq-5c3a8b69");
-                    (new Runtime).module(define, name => (name === "chart") && inspect());
-            </script>
-
+                    const inspect = Inspector.into("#observablehq-b4c1e6a3");
+                    (new Runtime).module(define, name => (name === "special_line") && inspect());
+                </script>
+            </div>
+            
         </div>
-    <script type ="text/javascript" src= "javascript/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
+        
+
+
+
+        
+        <div class="section ">
+            <div class ="content">
+                <div class="question">
+                    <p>
+                        <strong> Question 2: What is the positive case for each state?</strong> 
+                    </p>
+                </div>
+                <!-- This is the code embed from Tableau for question 2-->
+                <div class='tableauPlaceholder' id='viz1588226297116' style='position: relative'><noscript>
+                    <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RN&#47;RNGDT7CS4&#47;1_rss.png' style='border: none' /></a>
+                        </noscript>
+                        <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                            <param name='embed_code_version' value='3' /> 
+                            <param name='path' value='shared&#47;RNGDT7CS4' /> 
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RN&#47;RNGDT7CS4&#47;1.png' /> 
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='filter' value='publish=yes' />
+                        </object>
+                </div>                
+                    <script type='text/javascript'>                    
+                        var divElement = document.getElementById('viz1588226297116');                    
+                        var vizElement = divElement.getElementsByTagName('object')[0];                    
+                        if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                        else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                        else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
+                        var scriptElement = document.createElement('script');                    
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+                    </script>
+            </div>
+            
+            
+        </div>
+
+        
+
+
+        <div class="section "">
+            <div class="content">
+                <div class="question">
+                    <p>
+                        <strong> Question 3: How is the death increase rate of each state?</strong> 
+                    </p>
+                </div>
+                <div id="vis"></div>
+    
+                    <script type="text/javascript">
+                    var yourVlSpec = {
+                                "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+                                "data": {
+                                    "url": "https://gist.githubusercontent.com/KevinK88/2a8f61ee702514363994da0a55930e91/raw/34b65b417875e5bce0fb534799f75593740ac515/deathincrease.csv"
+                                },
+                                "width": 400,
+                                "height": 300,
+                                "layer": [
+                                    {
+                                    "encoding": {
+                                        "x": {"field": "date", "type": "temporal"},
+                                        "y": {"field": "deathIncrease", "type": "quantitative"},
+                                        "color": {"field": "state", "type": "nominal"}
+                                    },
+                                    "layer": [
+                                        {"mark": "line"},
+                                        {
+                                        "selection": {
+                                            "label": {
+                                            "type": "single",
+                                            "nearest": true,
+                                            "on": "mouseover",
+                                            "encodings": ["x"],
+                                            "empty": "none"
+                                            }
+                                        },
+                                        "mark": "point",
+                                        "encoding": {
+                                            "opacity": {
+                                            "condition": {"selection": "label", "value": 1},
+                                            "value": 0
+                                            }
+                                        }
+                                        }
+                                    ]
+                                    },
+                                    {
+                                    "transform": [{"filter": {"selection": "label"}}],
+                                    "layer": [
+                                        {
+                                        "mark": {"type": "rule", "color": "gray"},
+                                        "encoding": {
+                                            "x": {"type": "temporal", "field": "date", "aggregate": "min"}
+                                        }
+                                        },
+                                        {
+                                        "encoding": {
+                                            "text": {"type": "quantitative", "field": "deathIncrease"},
+                                            "x": {"type": "temporal", "field": "date"},
+                                            "y": {"type": "quantitative", "field": "deathIncrease"}
+                                        },
+                                        "layer": [
+                                            {
+                                            "mark": {
+                                                "type": "text",
+                                                "stroke": "white",
+                                                "strokeWidth": 2,
+                                                "align": "left",
+                                                "dx": 5,
+                                                "dy": -5
+                                            }
+                                            },
+                                            {
+                                            "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
+                                            "encoding": {
+                                                "color": {"type": "nominal", "field": "symbol"}
+                                            }
+                                            }
+                                        ]
+                                        }
+                                    ]
+                                    }
+                                ]
+                    }
+                    vegaEmbed('#vis', yourVlSpec);
+                    </script>
+            
+
+
+
+            </div>
+            
+        
+        
+        
+        
+        
+        
+        
+        </div>
+
+
+
+
+        <div class="section ">
+            <div class="content">
+                <div class="question">
+                    <p>
+                        <strong> Question 4: How is COVID-19 affectting every state in the U.S from January to April?</strong> 
+                    </p>
+                </div>
+                    <!-- This is the code embed from Observable for question 3-->
+                <div id="observablehq-5c3a8b69"></div>
+                    <script type="module">
+                        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+                        import define from "https://api.observablehq.com/@kevink88/csc196v-final-project.js?v=3";
+                        const inspect = Inspector.into("#observablehq-5c3a8b69");
+                        (new Runtime).module(define, name => (name === "chart") && inspect());
+                </script>
+
+            </div>
+           
+        </div>
+        
+        <div class="section top_background">
+            <h1 style="font-size: 100px;">Solutions?</h1>
+        </div>
+        
+        <div class="section ">
+                <!-- <img src="image/social.jpg"  class="center" > -->
+               
+                <div class="slide"> <img src="image/wash-hand.jpg"  class="center" > </div>
+                <div class="slide"> <img src="image/stay-home.jpg"  class="center" ></div>
+                <div class="slide"> <img src="image/social.jpg"  class="center" > </div>
+        </div>
+        <div class="section top_background">
+            <h1 style="font-size: 80px;">Thank you</h1>
+        </div>
+    </div>
+     
+    <script src="./fullpage/fullpage.js" ></script>
+    <script src="app.js"></script>
+  </body>
 </html>
