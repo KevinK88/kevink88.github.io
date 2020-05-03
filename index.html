@@ -1,286 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-    <script src="https://vega.github.io/vega/vega.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-    <script src='https://d3js.org/d3.v4.min.js'></script>
-    <title>COVID-19</title>
-    <link rel="stylesheet" href="./fullpage/fullpage.css" />
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/vega@5">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-lite@4">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-embed@6">
+	</script>
+	<script src="https://vega.github.io/vega/vega.min.js">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/vega@5">
+	</script>
+	<script src='https://d3js.org/d3.v4.min.js'>
+	</script>
+	<title>COVID-19</title>
+	<link href="./fullpage/fullpage.css" rel="stylesheet">
 </head>
-
-
 <body>
-    <div id="fullpage">
-        <div class="section  ">
-            <div class="top_background " >
-                <h1> COVID-19</h1>
-                <h1>Sam Lee - Hung Quach - Rigoberto Garcia</h1>
-            </div>
-        </div>
-        <div class="section image-background ">
-
-        </div>
-        <div class="section ">
-            <div class = "content">
-                <center><h1> 1 - Brief Introduction</h1>
-                <p> COVID-19 has been increasing dramatically in the U.S since the first case was indentified. 
-                    The virus has spread to every single state and has <br> caused numerous deaths, and has changed the lives
-                    of many Americans. In order to fight the disease we have to find solutions so we can decrease the 
-                    spread of the virus. <br> In order to effectively attack the virus we have to use and take advanatage of the 
-                    data we have. We need to use our knowledge and skills so we can fight the virus and spread awareness to many people.  
-                </p></center>
-            </div>
-        </div>
-        <div class="section ">
-            <div class = "content">
-                <h1> 2 - Questions Being Asked</h1>
-                <p>
-                    <ul>
-                        <li>
-                            What is the propotion of the death rate with people who are positive within each state?
-                        </li>
-                        <li>
-                            What is the positive case of each state?
-                        </li>
-                        <li>
-                             What is the death increase rate of each state?
-                        </li>
-                        <li>
-                        	How is COVID-19 affectting every state in the U.S from January to April?
-                        </li>
-                        <li>
-                            What is the solution?
-                        </li>
-                    </ul> 
-                </p> 
-            </div>
-        </div>
-        <div class="section ">
-            <div class="content">
-                <div class="question">
-                    <p>
-                        <strong> Question 1: What is the propotion of the death rate with people who are positive within each state? </strong> 
-                    </p>
-                </div>
-                <div id="observablehq-b4c1e6a3"></div>
-                <script type="module">
-                    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-                    import define from "https://api.observablehq.com/@kevink88/csc196v-final-project.js?v=3";
-                    const inspect = Inspector.into("#observablehq-b4c1e6a3");
-                    (new Runtime).module(define, name => (name === "special_line") && inspect());
-                </script>
-                <p><strong>The states are the backbone of the US, and they are currently under quarantine as the number of <br> cases rises. In order for us to understand the situation of the states its difficult for us to interpret data when its just numbers. So by using <br>this graph we can clearly see the proportion of the
-                death rate with people who are positive within each state. This helps us understand the data by <br>being able to see the rate of change quickly since we can change the state within seconds. 
-            </strong></p>
-            </div>
-            
-        </div>
-        
-
-
-
-        
-        <div class="section ">
-            <div class ="content">
-                <div class="question">
-                    <p>
-                        <strong> Question 2: What is the positive case for each state?</strong> 
-                    </p>
-                         <p><strong>
-                         	In order for us to really dig deep with the number of cases 
-                         	we have to create a visual model that can help us easily navigate
-                         	through the states. This is why maps are very useful for us, 
-                         	and as more and more cases appear in the states, we want to be able to have such visuals. In the visual below we can filter the states by inserting the name in the search bar or we can simply click on the state that we want to view. After clicking we can see the number of people that are positive within that state. We can also see which states have more cases by the color of the state. This really does show what states are impacted more just by glancing at the map. 
-            </strong></p>
-                </div>
-                <!-- This is the code embed from Tableau for question 2-->
-                <div class='tableauPlaceholder' id='viz1588226297116' style='position: relative'><noscript>
-                    <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RN&#47;RNGDT7CS4&#47;1_rss.png' style='border: none' /></a>
-                        </noscript>
-                        <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                            <param name='embed_code_version' value='3' /> 
-                            <param name='path' value='shared&#47;RNGDT7CS4' /> 
-                            <param name='toolbar' value='yes' />
-                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RN&#47;RNGDT7CS4&#47;1.png' /> 
-                            <param name='animate_transition' value='yes' />
-                            <param name='display_static_image' value='yes' />
-                            <param name='display_spinner' value='yes' />
-                            <param name='display_overlay' value='yes' />
-                            <param name='display_count' value='yes' />
-                            <param name='filter' value='publish=yes' />
-                        </object>
-                </div>                
-                    <script type='text/javascript'>                    
-                        var divElement = document.getElementById('viz1588226297116');                    
-                        var vizElement = divElement.getElementsByTagName('object')[0];                    
-                        if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
-                        else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
-                        else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
-                        var scriptElement = document.createElement('script');                    
-                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-                        vizElement.parentNode.insertBefore(scriptElement, vizElement);               
-                    </script>
-            </div>
-            
-        </div>
-
-        
-
-
-        <div class="section "">
-            <div class="content">
-                <div class="question">
-                    <p>
-                        <strong> Question 3: How is the death increase rate of each state?</strong> 
-                    </p>
-                     <p><strong>
-                         	In order to undertsand and see trends of multiple items within a graph we have to be able to figure out what all the items have in common. Right now all the states are suffering from the coronavirus, so by putting all the states in a graph we can see a trend within it. In the graph below we can easily see the line graph of all the states and can easily point out which states have been impacted the most and how their death rate has increased within a few days. 
-            </strong></p>
-                </div>
-                <div id="vis"></div>
-    
-                    <script type="text/javascript">
-                    var yourVlSpec = {
-                                "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-                                "data": {
-                                    "url": "https://gist.githubusercontent.com/KevinK88/2a8f61ee702514363994da0a55930e91/raw/34b65b417875e5bce0fb534799f75593740ac515/deathincrease.csv"
-                                },
-                                "width": 400,
-                                "height": 300,
-                                "layer": [
-                                    {
-                                    "encoding": {
-                                        "x": {"field": "date", "type": "temporal"},
-                                        "y": {"field": "deathIncrease", "type": "quantitative"},
-                                        "color": {"field": "state", "type": "nominal"}
-                                    },
-                                    "layer": [
-                                        {"mark": "line"},
-                                        {
-                                        "selection": {
-                                            "label": {
-                                            "type": "single",
-                                            "nearest": true,
-                                            "on": "mouseover",
-                                            "encodings": ["x"],
-                                            "empty": "none"
-                                            }
-                                        },
-                                        "mark": "point",
-                                        "encoding": {
-                                            "opacity": {
-                                            "condition": {"selection": "label", "value": 1},
-                                            "value": 0
-                                            }
-                                        }
-                                        }
-                                    ]
-                                    },
-                                    {
-                                    "transform": [{"filter": {"selection": "label"}}],
-                                    "layer": [
-                                        {
-                                        "mark": {"type": "rule", "color": "gray"},
-                                        "encoding": {
-                                            "x": {"type": "temporal", "field": "date", "aggregate": "min"}
-                                        }
-                                        },
-                                        {
-                                        "encoding": {
-                                            "text": {"type": "quantitative", "field": "deathIncrease"},
-                                            "x": {"type": "temporal", "field": "date"},
-                                            "y": {"type": "quantitative", "field": "deathIncrease"}
-                                        },
-                                        "layer": [
-                                            {
-                                            "mark": {
-                                                "type": "text",
-                                                "stroke": "white",
-                                                "strokeWidth": 2,
-                                                "align": "left",
-                                                "dx": 5,
-                                                "dy": -5
-                                            }
-                                            },
-                                            {
-                                            "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
-                                            "encoding": {
-                                                "color": {"type": "nominal", "field": "symbol"}
-                                            }
-                                            }
-                                        ]
-                                        }
-                                    ]
-                                    }
-                                ]
-                    }
-                    vegaEmbed('#vis', yourVlSpec);
-                    </script>
-            
-
-
-
-            </div>
-            
-        
-        
-        
-        
-        
-        
-        
-        </div>
-
-
-
-
-        <div class="section ">
-            <div class="content">
-                <div class="question">
-                    <p>
-                        <strong> Question 4: How is COVID-19 affectting every state in the U.S from January to April?</strong> 
-                    </p>
-                      <p><strong>
-                         	Many times we want to see our data in action. We want to portray the data as it were alive while it tells a story within itself. To do this we have to move the data around without any human interaction. The graph below is a bar race chart that shows which number of states have been infected the most in a race like manner. The chart makes it look like the states are in a competition with each other, and this brings the data to life. From the beginning we see the bars moving, and the user can patiently look foward to which states come out on top. Not by means of glory but to see the impacted result of the state. 
-            </strong></p>
-                </div>
-                    <!-- This is the code embed from Observable for question 3-->
-                <div id="observablehq-5c3a8b69"></div>
-                    <script type="module">
-                        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-                        import define from "https://api.observablehq.com/@kevink88/csc196v-final-project.js?v=3";
-                        const inspect = Inspector.into("#observablehq-5c3a8b69");
-                        (new Runtime).module(define, name => (name === "chart") && inspect());
-                </script>
-
-            </div>
-           
-        </div>
-        
-        <div class="section top_background">
-            <h1 style="font-size: 100px;">Solutions?</h1>
-        </div>
-        
-        <div class="section ">
-                <!-- <img src="image/social.jpg"  class="center" > -->
-               
-                <div class="slide"> <img src="image/wash-hand.jpg"  class="center" > </div>
-                <div class="slide"> <img src="image/stay-home.jpg"  class="center" ></div>
-                <div class="slide"> <img src="image/social.jpg"  class="center" > </div>
-        </div>
-        <div class="section top_background">
-            <h1 style="font-size: 80px;">Thank you</h1>
-        </div>
-    </div>
-     
-    <script src="./fullpage/fullpage.js" ></script>
-    <script src="app.js"></script>
-  </body>
+	<div id="fullpage">
+		<div class="section">
+			<div class="top_background">
+				<h1>COVID-19 (AKA Coronavirus)</h1>
+				<h1>Sam Lee - Hung Quach - Rigoberto Garcia</h1>
+				<h1>CSC 196V Data Visualization</h1>
+				<h1>Final Project</h1>
+				<h1>Professor Anna Baynes</h1>
+			</div>
+		</div>
+		<div class="section image-background"></div>
+		<div class="section">
+			<div class="content">
+				<center>
+					<h1>1 - Brief Introduction</h1>
+					<p>COVID-19 has been increasing dramatically in the U.S since the first case was indentified. The virus has spread to every single state and has caused numerous deaths, and has changed the lives of many Americans. In order to fight the disease we have to find solutions so we can decrease the spread of the virus. In order to effectively attack the virus we have to use and take advanatage of the data we have. We need to use our knowledge and skills so we can fight the virus and spread awareness to many people.</p>
+				</center>
+			</div>
+		</div>
+		<div class="section">
+			<div class="content">
+				<h1>2 - Questions Being Asked</h1>
+				<p></p>
+				<ul>
+					<li>What is the propotion of the death rate with people who are positive within each state?</li>
+					<li>What is the positive case of each state?</li>
+					<li>What is the death increase rate of each state?</li>
+					<li>How is COVID-19 affectting every state in the U.S from January to April?</li>
+					<li>What is the solution?</li>
+				</ul>
+				<p></p>
+			</div>
+		</div>
+		<div class="section">
+			<div class="content">
+				<div class="question">
+					<p><strong>Question 1: What is the propotion of the death rate with people who are positive within each state?</strong></p>
+				</div>
+				<p><strong>The states are the backbone of the US, and they are currently under quarantine as the number of cases rises. In order for us to understand the situation of the states its difficult for us to interpret data when its just numbers. So by using this graph we can clearly see the proportion of the death rate with people who are positive within each state. This helps us understand the data by being able to see the rate of change quickly since we can change the state within seconds.</strong></p>
+				<div id="observablehq-b4c1e6a3"></div>
+				<script type="module">
+				                            import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+				                            import define from "https://api.observablehq.com/@kevink88/csc196v-final-project.js?v=3";
+				                            const inspect = Inspector.into("#observablehq-b4c1e6a3");
+				                            (new Runtime).module(define, name => (name === "special_line") && inspect());
+				</script>
+			</div>
+		</div>
+		<div class="section">
+			<div class="content">
+				<div class="question">
+					<p><strong>Question 2: What is the positive case for each state?</strong></p>
+					<p><strong>In order for us to really dig deep with the number of cases we have to create a visual model that can help us easily navigate through the states. This is why maps are very useful for us, and as more and more cases appear in the states, we want to be able to have such visuals. In the visual below we can filter the states by inserting the name in the search bar or we can simply click on the state that we want to view. After clicking we can see the number of people that are positive within that state. We can also see which states have more cases by the color of the state. This really does show what states are impacted more just by glancing at the map.</strong></p>
+				</div><!-- This is the code embed from Tableau for question 2-->
+				<div class='tableauPlaceholder' id='viz1588226297116' style='position: relative'>
+					<noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RN&#47;RNGDT7CS4&#47;1_rss.png' style='border: none'></a></noscript> <object class='tableauViz' style='display:none;'>
+						<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'>
+						 <param name='embed_code_version' value='3'>
+						 <param name='path' value='shared&#47;RNGDT7CS4'>
+						 <param name='toolbar' value='yes'>
+						 <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RN&#47;RNGDT7CS4&#47;1.png'>
+						 <param name='animate_transition' value='yes'>
+						 <param name='display_static_image' value='yes'>
+						 <param name='display_spinner' value='yes'>
+						 <param name='display_overlay' value='yes'>
+						 <param name='display_count' value='yes'>
+						 <param name='filter' value='publish=yes'>
+					</object>
+				</div>
+				<script type='text/javascript'>
+				                            
+				                                var divElement = document.getElementById('viz1588226297116');                    
+				                                var vizElement = divElement.getElementsByTagName('object')[0];                    
+				                                if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+				                                else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+				                                else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
+				                                var scriptElement = document.createElement('script');                    
+				                                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+				                                vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+				</script>
+			</div>
+		</div>
+		<div class="section">
+			<div class="content">
+				<div class="question">
+					<p><strong>Question 3: How is the death increase rate of each state?</strong></p>
+					<p><strong>In order to undertsand and see trends of multiple items within a graph we have to be able to figure out what all the items have in common. Right now all the states are suffering from the coronavirus, so by putting all the states in a graph we can see a trend within it. In the graph below we can easily see the line graph of all the states and can easily point out which states have been impacted the most and how their death rate has increased within a few days.</strong></p>
+				</div>
+				<div id="vis"></div>
+				<script type="text/javascript">
+				                            var yourVlSpec = {
+				                                        "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+				                                        "data": {
+				                                            "url": "https://gist.githubusercontent.com/KevinK88/2a8f61ee702514363994da0a55930e91/raw/34b65b417875e5bce0fb534799f75593740ac515/deathincrease.csv"
+				                                        },
+				                                        "width": 400,
+				                                        "height": 300,
+				                                        "layer": [
+				                                            {
+				                                            "encoding": {
+				                                                "x": {"field": "date", "type": "temporal"},
+				                                                "y": {"field": "deathIncrease", "type": "quantitative"},
+				                                                "color": {"field": "state", "type": "nominal"}
+				                                            },
+				                                            "layer": [
+				                                                {"mark": "line"},
+				                                                {
+				                                                "selection": {
+				                                                    "label": {
+				                                                    "type": "single",
+				                                                    "nearest": true,
+				                                                    "on": "mouseover",
+				                                                    "encodings": ["x"],
+				                                                    "empty": "none"
+				                                                    }
+				                                                },
+				                                                "mark": "point",
+				                                                "encoding": {
+				                                                    "opacity": {
+				                                                    "condition": {"selection": "label", "value": 1},
+				                                                    "value": 0
+				                                                    }
+				                                                }
+				                                                }
+				                                            ]
+				                                            },
+				                                            {
+				                                            "transform": [{"filter": {"selection": "label"}}],
+				                                            "layer": [
+				                                                {
+				                                                "mark": {"type": "rule", "color": "gray"},
+				                                                "encoding": {
+				                                                    "x": {"type": "temporal", "field": "date", "aggregate": "min"}
+				                                                }
+				                                                },
+				                                                {
+				                                                "encoding": {
+				                                                    "text": {"type": "quantitative", "field": "deathIncrease"},
+				                                                    "x": {"type": "temporal", "field": "date"},
+				                                                    "y": {"type": "quantitative", "field": "deathIncrease"}
+				                                                },
+				                                                "layer": [
+				                                                    {
+				                                                    "mark": {
+				                                                        "type": "text",
+				                                                        "stroke": "white",
+				                                                        "strokeWidth": 2,
+				                                                        "align": "left",
+				                                                        "dx": 5,
+				                                                        "dy": -5
+				                                                    }
+				                                                    },
+				                                                    {
+				                                                    "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
+				                                                    "encoding": {
+				                                                        "color": {"type": "nominal", "field": "symbol"}
+				                                                    }
+				                                                    }
+				                                                ]
+				                                                }
+				                                            ]
+				                                            }
+				                                        ]
+				                            }
+				                            vegaEmbed('#vis', yourVlSpec);
+				</script>
+			</div>
+		</div>
+		<div class="section">
+			<div class="content">
+				<div class="question">
+					<p><strong>Question 4: How is COVID-19 affectting every state in the U.S from January to April?</strong></p>
+					<p><strong>Many times we want to see our data in action. We want to portray the data as it were alive while it tells a story within itself. To do this we have to move the data around without any human interaction. The graph below is a bar race chart that shows which number of states have been infected the most in a race like manner. The chart makes it look like the states are in a competition with each other, and this brings the data to life. From the beginning we see the bars moving, and the user can patiently look foward to which states come out on top. Not by means of glory but to see the impacted result of the state.</strong></p>
+				</div><!-- This is the code embed from Observable for question 3-->
+				<div id="observablehq-5c3a8b69"></div>
+				<script type="module">
+				                                import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+				                                import define from "https://api.observablehq.com/@kevink88/csc196v-final-project.js?v=3";
+				                                const inspect = Inspector.into("#observablehq-5c3a8b69");
+				                                (new Runtime).module(define, name => (name === "chart") && inspect());
+				</script>
+			</div>
+		</div>
+		<div class="section top_background">
+			<h1 style="font-size: 100px;">Solutions?</h1>
+			<p></p>
+			<div style="margin-left: 2em">
+				<a href="https://youtu.be/seA1wbXUQTs" target="_blank">Wash your hands often!!!</a>
+			</div>
+			<div style="margin-left: 2em">
+				<a href="https://youtu.be/xOrt8WMwVEo" target="_blank">Avoid close contact!!!</a>
+			</div>
+			<div style="margin-left: 2em">
+				<a href="https://youtu.be/UNEp5U_TCOM" target="_blank">Cover your mouth and nose with a cloth face cover when around others!!!</a>
+			</div>
+			<div style="margin-left: 2em">
+				<a href="https://youtu.be/mQINuSTP1jI" target="_blank">Cover coughs and sneezes!!!</a>
+			</div>
+			<div style="margin-left: 2em">
+				<a href="https://youtu.be/tW-Gj4c35yk" target="_blank">Clean and disinfect!!!</a>
+			</div>
+			<p></p>
+		</div>
+		<div class="section">
+			<!-- <img src="image/social.jpg"  class="center" > -->
+			<div class="slide"><img class="center" src="image/wash-hand.jpg"></div>
+			<div class="slide"><img class="center" src="image/stay-home.jpg"></div>
+			<div class="slide"><img class="center" src="image/social.jpg"></div>
+			<div class="slide"><img class="center" src="image/hand-sanitizer.jpg"></div>
+		</div>
+		<div class="section top_background">
+			<h1 style="font-size: 80px;">Thank you for visiting the website!</h1>
+		</div>
+	</div>
+	<script src="./fullpage/fullpage.js">
+	</script> 
+	<script src="app.js">
+	</script>
+</body>
 </html>
